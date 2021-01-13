@@ -2,6 +2,8 @@
 <html lang="en-US">
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
@@ -9,8 +11,8 @@
 </head>
 <body>
   <div class="container">
-    <h1>Input your name below and I will send you a letter!</h1>
-    <div>
+    <div class="to-be-hidden">
+      <h1>Input your name below and I will send you a letter!</h1>
       <form id="formOne">
         <div class="form-group">
           <label for="person1">Your Name</label>
@@ -21,7 +23,7 @@
     </div>
 
     <div id="story">
-      <h1>A fantastical adventure</h1>
+      <h1>A note from Widget's Co.</h1>
       <img src="img/BlueSFold.png" alt="a company logo">
       <p>Dear <span class="person1"></span>,</p>
       <p>Spicy jalapeno in pariatur ball tip, beef ribs flank meatball porchetta adipisicing burgdoggen kielbasa kevin pancetta sunt. Shoulder strip steak turkey, in velit minim tail ex fugiat veniam sed chislic venison ham hock ad. Ground round ut chislic pork chop strip steak. Occaecat jerky incididunt spare ribs filet mignon pancetta, kevin leberkas. Ullamco culpa pork loin burgdoggen magna excepteur dolore. Alcatra drumstick anim ground round esse shankle lorem nostrud culpa pork belly. Drumstick pork loin nisi esse shoulder porchetta doner culpa.</p>
@@ -29,7 +31,7 @@
       <p>Qui turducken kevin, short loin ball tip pork loin ut. Spare ribs et commodo ut ball tip swine andouille cow landjaeger in ipsum magna proident officia nostrud. Voluptate eiusmod nisi nulla, veniam esse pastrami aliquip short loin qui cillum cow. Fugiat ut pig dolor nulla ullamco meatloaf ham hock. Eu eiusmod jerky pig short ribs spare ribs cupidatat.</p>
       <p class="signature">Yours Truly,</p>
       <p class="signature">Widgets Co. Vice President of Sales</p>
-      <p class="signature">Henry Farfegnuggen</p>
+      <p class="signature" id="sig">Henry Farfegnuggen</p>
     </div>
   </div>
 </body>
